@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(containerlineargradient());
 
-class MyApp extends StatelessWidget {
+class app1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,9 +12,28 @@ class MyApp extends StatelessWidget {
           title: Text("Ini Appbar"),
           primary: true,
           toolbarTextStyle: TextStyle(backgroundColor: Colors.red),
-          backgroundColor: Colors.blueGrey,
         ),
-        body: Center(child: Text("INI BODY")),
+        body: Center(
+          child: Text("INI BODY"),
+        ),
+      ),
+    );
+  }
+}
+
+class containerlineargradient extends StatelessWidget {
+  const containerlineargradient({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+          colors: [Colors.red, Colors.blue],
+        ))),
       ),
     );
   }
