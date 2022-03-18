@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'stla.dart';
 
-void main() => runApp(cuper());
+void main() => runApp(mystla());
 
 class app1 extends StatelessWidget {
   @override
