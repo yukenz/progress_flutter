@@ -23,13 +23,17 @@ class _mystlaState extends State<mystla> {
         appBar: AppBar(title: Text("ini appbar")),
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(xval.toString(),
                   style: TextStyle(fontSize: 40 + xval.toDouble())),
-              RaisedButton(
-                child: Text("tambahkan"),
+              RaisedButton.icon(
+                icon: Icon(Icons.accessibility_new),
+                label: Text("lol"),
+                padding: EdgeInsets.all(100),
                 onPressed: onpressx,
                 color: Color.fromARGB(9, 91, 9, 206),
+                splashColor: Colors.red,
               ),
             ],
           ),
