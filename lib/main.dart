@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:pertemuan1/pertemuan5%20belajar%20routing.dart';
 import 'stla.dart';
 
-void main() => runApp(mystla());
+void main() => pertemuan5();
 
 class app1 extends StatelessWidget {
   @override
