@@ -4,9 +4,10 @@ import 'package:pertemuan1/pertemuan%206%20widget%20form.dart';
 import 'package:pertemuan1/pertemuan5%20belajar%20routing.dart';
 import 'package:pertemuan1/pertemuan7%20full%20form.dart';
 import 'pertemuan7 full form.dart';
+import 'pertemuan 8 API dan looping widget.dart';
 import 'stla.dart';
 
-void main() => pertemuan7();
+void main() => pertemuan8();
 
 class app1 extends StatelessWidget {
   @override
