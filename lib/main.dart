@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:pertemuan1/pertemuan%206%20widget%20form.dart';
 import 'package:pertemuan1/pertemuan5%20belajar%20routing.dart';
+import 'package:pertemuan1/pertemuan7%20full%20form.dart';
+import 'pertemuan7 full form.dart';
 import 'stla.dart';
 
-void main() => pertemuan6();
+void main() => pertemuan7();
 
 class app1 extends StatelessWidget {
   @override
