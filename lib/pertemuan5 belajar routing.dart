@@ -31,8 +31,19 @@ class route {
 }
 
 class HomePage extends StatelessWidget {
+  String button1 = "Tap Untuk ke AboutPage";
+  String button2 = "Tap Halaman lain";
+
   @override
   Widget build(BuildContext context) {
+    void button1press() {
+      Navigator.pushNamed(context, '/about');
+    }
+
+    void button2press() {
+      Navigator.pushNamed(context, '/halaman-404');
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Belajar Routing | Home Page'),
@@ -42,16 +53,12 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/about');
-              },
-              child: Text('Tap Untuk ke AboutPage'),
+              onPressed: button1press,
+              child: Text(button1),
             ),
             RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/halaman-404');
-              },
-              child: Text('Tap Halaman lain'),
+              onPressed: button2press,
+              child: Text(button2),
             ),
           ],
         ),
